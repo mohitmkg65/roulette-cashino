@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+.error {
+    font-size: 12px;
+}
+
+.pass-show {
+    position: absolute;
+    /* top: 4px; */
+    font-size: 16px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+}
+
+tbody td {
+    vertical-align: middle;
+    padding: 3px 7px !important;
+}
+
+.scrollable-cell {
+    max-height: 100px;
+    overflow: auto;
+    white-space: pre-line;
+}
+
+
+.change-status, .disabled-change-status {
+    font-size: 20px !important;
+    opacity: 0.7;
+}
+
+.disabled-change-status .tgle-on, .change-status .tgle-on {
+    color: green !important;
+}
+
+.disabled-change-status .tgle-off, .change-status .tgle-off {
+    color: red !important;
+}
+
+#submit-btn:disabled {
+    cursor: not-allowed;
+}
+
+td a.btn, td a button, td a [type="button"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    font-size: 12px !important;
+}
+
+td a:first-child button {
+    float: left !important;
+    margin-right: 5px !important;
+}
+
+td a.btn {
+    float: left;
+    margin-right: 3px;
+}
+
+.disabled-change-status i {
+    color: green !important;
+}
+
+.disabled-change-status i {
+    color: red !important;
+}
+
+.box-primary {
+    min-height: calc(100vh - 190px);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.upload-container {
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fafafa;
+    /* cursor: pointer; */
+    text-align: center;
+}
+
+#upload_area{
+    cursor: pointer;
+}
+
+#browse-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #fff;
+    background: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.progress-svg {
+    transform: rotate(-90deg);
+}
+
+.progress-background {
+    stroke: #e6e6e6;
+    stroke-width: 10;
+}
+
+.progress-bar {
+    stroke: #4caf50;
+    stroke-width: 10;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.img-note{
+    font-size: 12px !important;
+}
+
+.message-read-check{
+    font-size: 10px;
+    color: #4caf50;
+}
+
+.keyword-span{
+    background: rgb(226, 226, 226);
+    padding: 3px 10px;
+    margin: 3px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.notification-sup{
+    font-size: 15px;
+    color: #ff0000;
+    font-weight: 600;
+    top: -1.50em !important;
+    left: -0.5em !important;
+}
