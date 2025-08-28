@@ -38,10 +38,10 @@
         <span class="menu-arrow"></span>
         <div class="collapse" id="master">
             <ul class="collapse-nav-list">
-                <li class="intro-screen">
-                    <a href="{{url('admin/master/intro-screen')}}">
+                <li class="chip">
+                    <a href="{{url('admin/master/chip')}}">
                         <div class="link">
-                            <h5>Intro Screens</h5>
+                            <h5>Chip</h5>
                         </div>
                     </a>
                 </li>

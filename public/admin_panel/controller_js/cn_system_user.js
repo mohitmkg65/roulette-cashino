@@ -1,5 +1,5 @@
 $(function () {
-    var table = $('#casino_data_table').DataTable({
+    $('#casino_data_table').DataTable({
         processing: true,
         serverSide: true,
         
@@ -37,8 +37,4 @@ $(function () {
             searchable: false
         }]
     });
-
-    function reload_table() {
-        table.DataTable().ajax.reload(null, false);
-    }
 })

@@ -3,18 +3,18 @@ $(function () {
         processing: true,
         serverSide: true,
         
-        ajax: base_url + "/admin/roles-privileges/data-table",
+        ajax: base_url + "/admin/master/chip/data-table",
         columns: [{
             data: 'DT_RowIndex',
             name: 'DT_RowIndex'
         },
         {
-            data: 'role',
-            name: 'role'
+            data: 'value',
+            name: 'value'
         },
         {
-            data: 'privileges',
-            name: 'privileges'
+            data: 'color',
+            name: 'color'
         },
         {
             data: 'status',

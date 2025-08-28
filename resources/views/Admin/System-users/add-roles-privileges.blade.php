@@ -1,4 +1,4 @@
-@section('meta_title') Add Roles & Privileges | Construction Inventory @endsection
+@section('meta_title') Add Roles & Privileges | Admin | {{ config('constant.project.name')  }} @endsection
 @extends('Admin.Layouts.layout')
 @section('content')
 <div class="content-page">

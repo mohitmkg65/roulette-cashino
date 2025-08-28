@@ -25,6 +25,15 @@ Route::group(['prefix' => 'admin', 'middleware' => ['prevent-back-history', 'is_
 
     Route::get('/dashboard', [Admin\Dashboard\DashboardController::class, 'index'])->name('dashboard')->middleware('check.permission:dashboard');
 
+    Route::group(['prefix' => 'master'], function(){
+        Route::controller(Admin\Master\ChipController::class)->group(function () {
+            Route::get('chip', 'index');
+            Route::post('chip/store', 'store')->name('chip_value.store');
+            Route::get('chip/data-table','data_table');
+            Route::get('chip/edit/{id}','edit');
+        });
+    });
+
     Route::controller(Admin\Settings\GeneralSettings::class)->group(function () {
         Route::get('general-setting', 'index');
         Route::post('general-settings-store', 'store')->name('geraral.settings.store');
