@@ -37,6 +37,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['prevent-back-history', 'is_
             Route::get('referral-bonus', 'index');
             Route::post('referral-bonus/store', 'store')->name('referral_bonus.store');
         });
+        
+        Route::controller(Admin\Master\GameSettingController::class)->group(function () {
+            Route::get('game-setting', 'index');
+            Route::post('game-setting/store', 'store')->name('game_setting.store');
+        });
     });
 
     Route::controller(Admin\Settings\GeneralSettings::class)->group(function () {
