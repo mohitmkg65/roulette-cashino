@@ -17,10 +17,10 @@
         </a>
         <div class="collapse" id="cms">
             <ul class="collapse-nav-list">
-                <li class="cms-legal">
-                    <a href="{{ url('/admin/cms/legal-page') }}">
+                <li class="how-to-play">
+                    <a href="{{ url('/admin/cms/how-to-play') }}">
                         <div class="link">
-                            <h5>Legal Pages</h5>
+                            <h5>How to Play</h5>
                         </div>
                     </a>
                 </li>
@@ -45,10 +45,24 @@
                         </div>
                     </a>
                 </li>
-                <li class="app-config">
-                    <a href="{{url('admin/master/app-config')}}">
+                <li class="referral-bonus">
+                    <a href="{{url('admin/master/referral-bonus')}}">
                         <div class="link">
-                            <h5>App Configuration</h5>
+                            <h5>Referral Bonus</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="game-setting">
+                    <a href="{{url('admin/master/game-setting')}}">
+                        <div class="link">
+                            <h5>Game Setting</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="payment-gateway">
+                    <a href="{{url('admin/master/payment-gateway')}}">
+                        <div class="link">
+                            <h5>Payment Gateway</h5>
                         </div>
                     </a>
                 </li>

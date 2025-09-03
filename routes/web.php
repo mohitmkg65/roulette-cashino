@@ -32,6 +32,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['prevent-back-history', 'is_
             Route::get('chip/data-table','data_table');
             Route::get('chip/edit/{id}','edit');
         });
+        
+        Route::controller(Admin\Master\ReferralBonusController::class)->group(function () {
+            Route::get('referral-bonus', 'index');
+            Route::post('referral-bonus/store', 'store')->name('referral_bonus.store');
+        });
     });
 
     Route::controller(Admin\Settings\GeneralSettings::class)->group(function () {

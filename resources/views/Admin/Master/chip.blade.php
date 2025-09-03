@@ -7,11 +7,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h4 class="header-title ">Add Chip Value</h4>
+                    <h4 class="header-title ">{{ !empty($chip->id) ? 'Edit' : 'Add' }} Chip Value</h4>
                 </div>
 
                 <div class="col-4">
-                    <div class="card department-card">
+                    <div class="card">
                         <div class="card-body">
                             <form action="{{route('chip_value.store')}}" method="post" id="chip-value-form" enctype="multipart/form-data">
                                 @csrf
